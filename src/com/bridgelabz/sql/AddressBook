@@ -32,3 +32,52 @@ om |
 +-----------+----------+---------+--------+-----+--------------+----------------
 ---+
 
+mysql> INSERT INTO address_book (firstname,lastname,address,city,zip,phone_numbe
+r,email) VALUES ('Yash','Band','MiraRoad','Mumbai','37','320000000','yash@gmail.
+com');
+Query OK, 1 row affected (0.13 sec)
+
+mysql> INSERT INTO address_book (firstname,lastname,address,city,zip,phone_numbe
+r,email) VALUES ('Zeel','Patel','Kandivali','Mumbai','67','780000000','zeel@gmai
+l.com');
+Query OK, 1 row affected (0.09 sec)
+
+mysql> SELECT * FROM address_book;
++-----------+----------+-----------+--------+-----+--------------+--------------
+-----+
+| firstname | lastname | address   | city   | zip | phone_number | email
+     |
++-----------+----------+-----------+--------+-----+--------------+--------------
+-----+
+| Shub      | Band     | Malad     | Mumbai |  97 |   9000000000 | shubham@gmail
+.com |
+| Yash      | Band     | MiraRoad  | Mumbai |  37 |    320000000 | yash@gmail.co
+m    |
+| Zeel      | Patel    | Kandivali | Mumbai |  67 |    780000000 | zeel@gmail.co
+m    |
++-----------+----------+-----------+--------+-----+--------------+--------------
+-----+
+
+#UC-4
+
+mysql> UPDATE address_book SET city='Panji' WHERE firstname='Yash';
+Query OK, 1 row affected (0.10 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT * FROM address_book;
++-----------+----------+-----------+--------+-----+--------------+--------------
+-----+
+| firstname | lastname | address   | city   | zip | phone_number | email
+     |
++-----------+----------+-----------+--------+-----+--------------+--------------
+-----+
+| Shub      | Band     | Malad     | Mumbai |  97 |   9000000000 | shubham@gmail
+.com |
+| Yash      | Band     | MiraRoad  | Panji  |  37 |    320000000 | yash@gmail.co
+m    |
+| Zeel      | Patel    | Kandivali | Mumbai |  67 |    780000000 | zeel@gmail.co
+m    |
++-----------+----------+-----------+--------+-----+--------------+--------------
+-----+
+
+
