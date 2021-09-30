@@ -1,0 +1,7 @@
+ADDRESS BOOK DATABASE
+
+#UC-1
+CREATE DATABASE addressbook_service;
+SHOW DATABASES;
+USE addressbook_service;
+SELECT DATABASE();
