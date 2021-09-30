@@ -32,3 +32,20 @@ om |
 +-----------+----------+---------+--------+-----+--------------+----------------
 ---+
 
+#UC-5
+mysql> DELETE FROM address_book WHERE firstname='Zeel';
+Query OK, 1 row affected (0.19 sec)
+
+mysql> SELECT * FROM address_book;
++-----------+----------+----------+--------+-----+--------------+---------------
+----+
+| firstname | lastname | address  | city   | zip | phone_number | email
+    |
++-----------+----------+----------+--------+-----+--------------+---------------
+----+
+| Shub      | Band     | Malad    | Mumbai |  97 |   9000000000 | shubham@gmail.
+com |
+| Yash      | Band     | MiraRoad | Panji  |  37 |    320000000 | yash@gmail.com
+    |
++-----------+----------+----------+--------+-----+--------------+---------------
+----+
