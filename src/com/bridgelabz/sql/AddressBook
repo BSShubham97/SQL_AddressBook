@@ -17,3 +17,18 @@ phone_number bigint,
 email varchar(150) NOT NULL
 );
 
+#UC-3
+INSERT INTO address_book (firstname,lastname,address,city,zip,phone_number,email) VALUES ('Shub','Band','Malad','Mumbai','97','9000000000','shubham@gmail
+.com');
+mysql> SELECT * FROM address_book;
++-----------+----------+---------+--------+-----+--------------+----------------
+---+
+| firstname | lastname | address | city   | zip | phone_number | email
+   |
++-----------+----------+---------+--------+-----+--------------+----------------
+---+
+| Shub      | Band     | Malad   | Mumbai |  97 |   9000000000 | shubham@gmail.c
+om |
++-----------+----------+---------+--------+-----+--------------+----------------
+---+
+
