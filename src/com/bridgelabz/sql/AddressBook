@@ -49,3 +49,46 @@ com |
     |
 +-----------+----------+----------+--------+-----+--------------+---------------
 ----+
+
+mysql> INSERT INTO address_book (firstname,lastname,address,city,zip,phone_numbe
+r,email) VALUES ('Shikar','Dhawan','Mumbra','Mumbai','37','7300000000','shikhar@gmail.com'),
+     ('Prithvi','Shaw','KarolBagh','Delhi','94','9008765432','shawp@gmail.com'),
+     ('Rishabh','Pant','AiportRoad','Nashik','347','7900000930','pants@gmail.com'),
+     ('Ashwin','Ravichnd','Chepauk','Chennai','843','10023001200','spinner@off.com');
+
+mysql> SELECT * from address_book;
++-----------+----------+------------+---------+-----+--------------+------------
+-------+
+| firstname | lastname | address    | city    | zip | phone_number | email
+       |
++-----------+----------+------------+---------+-----+--------------+------------
+-------+
+| Shub      | Band     | Malad      | Mumbai  |  97 |   9000000000 | shubham@gma
+il.com |
+| Yash      | Band     | MiraRoad   | Panji   |  37 |    320000000 | yash@gmail.
+com    |
+| Shikar    | Dhawan   | Mumbra     | Mumbai  |  37 |   7300000000 | shikhar@gma
+il.com |
+| Prithvi   | Shaw     | KarolBagh  | Delhi   |  94 |   9008765432 | shawp@gmail
+.com   |
+| Rishabh   | Pant     | AiportRoad | Nashik  | 347 |   7900000930 | pants@gmail
+.com   |
+| Ashwin    | Ravichnd | Chepauk    | Chennai | 843 |  10023001200 | spinner@off
+.com   |
++-----------+----------+------------+---------+-----+--------------+------------
+-------+
+
+#UC-6
+mysql> SELECT * from address_book WHERE city='Mumbai';
++-----------+----------+---------+--------+-----+--------------+----------------
+---+
+| firstname | lastname | address | city   | zip | phone_number | email
+   |
++-----------+----------+---------+--------+-----+--------------+----------------
+---+
+| Shub      | Band     | Malad   | Mumbai |  97 |   9000000000 | shubham@gmail.c
+om |
+| Shikar    | Dhawan   | Mumbra  | Mumbai | 475 |   7300000000 | shikhar@gmail.c
+om |
++-----------+----------+---------+--------+-----+--------------+----------------
+---+
