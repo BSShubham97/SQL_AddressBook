@@ -5,3 +5,15 @@ CREATE DATABASE addressbook_service;
 SHOW DATABASES;
 USE addressbook_service;
 SELECT DATABASE();
+
+#UC-2
+CREATE TABLE address_book(
+firstname varchar(150) NOT NULL,
+lastname varchar(150) NOT NULL,
+address varchar(150) NOT NULL,
+city varchar(150) NOT NULL,
+zip int NOT NULL,
+phone_number bigint,
+email varchar(150) NOT NULL
+);
+
