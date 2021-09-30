@@ -107,3 +107,52 @@ mysql> SELECT COUNT(firstname) FROM address_book WHERE city='Mumbai' ;
 +------------------+
 |                2 |
 +------------------+
+
+#UC-8
+mysql> SELECT city FROM address_book ORDER BY firstname ASC ;
++---------+
+| city    |
++---------+
+| Chennai |
+| Delhi   |
+| Nashik  |
+| Mumbai  |
+| Mumbai  |
+| Panji   |
++---------+
+6 rows in set (0.01 sec)
+
+mysql> SELECT firstname FROM address_book ORDER BY city ASC ;
++-----------+
+| firstname |
++-----------+
+| Ashwin    |
+| Prithvi   |
+| Shub      |
+| Shikar    |
+| Rishabh   |
+| Yash      |
++-----------+
+6 rows in set (0.00 sec)
+
+mysql> SELECT * FROM address_book ORDER BY firstname ASC ;
++-----------+----------+------------+---------+-----+--------------+------------
+-------+
+| firstname | lastname | address    | city    | zip | phone_number | email
+       |
++-----------+----------+------------+---------+-----+--------------+------------
+-------+
+| Ashwin    | Ravichnd | Chepauk    | Chennai | 843 |  10023001200 | spinner@off
+.com   |
+| Prithvi   | Shaw     | KarolBagh  | Delhi   |  94 |   9008765432 | shawp@gmail
+.com   |
+| Rishabh   | Pant     | AiportRoad | Nashik  | 347 |   7900000930 | pants@gmail
+.com   |
+| Shikar    | Dhawan   | Mumbra     | Mumbai  | 475 |   7300000000 | shikhar@gma
+il.com |
+| Shub      | Band     | Malad      | Mumbai  |  97 |   9000000000 | shubham@gma
+il.com |
+| Yash      | Band     | MiraRoad   | Panji   |  37 |    320000000 | yash@gmail.
+com    |
++-----------+----------+------------+---------+-----+--------------+------------
+-------+
