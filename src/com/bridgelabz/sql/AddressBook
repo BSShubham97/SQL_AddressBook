@@ -92,3 +92,18 @@ om |
 om |
 +-----------+----------+---------+--------+-----+--------------+----------------
 ---+
+
+#UC-7
+mysql> SELECT COUNT(firstname) FROM address_book ;
++------------------+
+| COUNT(firstname) |
++------------------+
+|                6 |
++------------------+
+
+mysql> SELECT COUNT(firstname) FROM address_book WHERE city='Mumbai' ;
++------------------+
+| COUNT(firstname) |
++------------------+
+|                2 |
++------------------+
